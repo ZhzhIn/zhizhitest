@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="patech.com.zhizhitest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+        android:screenOrientation="portrait"
+        portrait竖屏,landscape为横屏
+        -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LifeActivity"
+            android:label="@string/title_activity_life"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SecondaryActivity"
+            android:label="@string/title_activity_secondary"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="patech.com.zhizhitest.ThirdActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FourthActivity">
+            <intent-filter>
+                <action android:name="patech.com.zhizhitest.FourthActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

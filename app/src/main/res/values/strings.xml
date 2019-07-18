@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">zhizhiTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_life">LifeActivity</string>
+    <string name="title_activity_secondary">SecondaryActivity</string>
+
+</resources>
