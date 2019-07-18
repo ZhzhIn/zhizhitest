@@ -9,26 +9,24 @@ import android.widget.Button;
 
 public class FourthActivity extends AppCompatActivity {
     private Button finishButton;
-    public static final int RESULT_CODE=2003;
+    public static final int RESULT_CODE = 2003;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
 
-        finishButton = (Button)findViewById(R.id.finish);
+        finishButton = (Button) findViewById(R.id.finish);
         finishButton.setOnClickListener(
-                new View.OnClickListener(){
+                new View.OnClickListener() {
                     @Override
-                    public void onClick(View view){
+                    public void onClick(View view) {
                         Intent intent = getIntent();
-                        intent.putExtra("name","ricky");
-                        setResult(RESULT_CODE,intent);
+                        intent.putExtra("name", "ricky");
+                        setResult(RESULT_CODE, intent);
                         finish();
                     }
                 }
         );
-
-
     }
-
 }
